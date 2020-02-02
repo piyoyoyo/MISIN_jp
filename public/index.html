@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>{$title}</title>
+
+  <!-- CSS for PC and tablet-->
+  <link rel="stylesheet" href="css/pc/common.css" type="text/css">
+  <!-- <link rel="stylesheet" href="css/pc/styles.css" type="text/css">
+  <link rel="stylesheet" href="css/pc/form_item.css" type="text/css"> -->
+
+  <!-- CSS for SP ※まだ書いてない -->
+  <!-- <link rel="stylesheet" href="../../../public/css/sp/common.css" type="text/css" media="screen and (max-width:480px)">
+  <link rel="stylesheet" href="../../../public/css/sp/styles.css" type="text/css" media="screen and (max-width:480px)">
+  <link rel="stylesheet" href="../../../public/css/sp/form_item.css" type="text/css" media="screen and (max-width:480px)"> -->
+
+</head>
+
+<body>
+
+  <!-- {include file='header.tpl'} -->
+
+  <header class="header" id="header">
+    <div class="header_main">
+      <h1 class="header_logo"><a href="/">MISIN</a></h1>
+      <ul class="header_members_nav">
+        <li class="header_sign_in">
+          <a href="#">SIGN IN</a>
+        </li>
+        <li class="header_new_order">
+          <a href="#">NEW ORDER</a>
+        </li>
+      </ul>
+    </div><!-- /.header_main -->
+
+    <div class="header_nav is-toppage" id="header_nav">
+      <nav>
+        <ul class="header_global_nav">
+          <li><a href="/">HOME</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">WORKS</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav><!-- /.header_global_nav -->
+    </div><!-- /.header_nav -->
+  </header>
+
+  <!-- //{include file='header.tpl'} -->
+
+  <main>
+    <article class="inner inner_top">
+      <div class="l-section_cont">
+        <div class="l-inner">
+          <h1 class="p-section_ttl">HOME</h1>
+
+        </div>
+      </div>
+
+
+
+    </article>
+  </main>
+
+  <!-- {include file='footer.tpl'} -->
+  <footer class="footer" id="footer">
+    <div class="footer_cont">
+      <p class="footer_copyright">Copyright 2019 KYOKO KOYAMA</p>
+    </div>
+  </footer>
+  <!-- /{include file='footer.tpl'} -->
+
+  <!-- ここにJavaScript読み込み -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../../../public/js/main.js"></script>
+</body>
+</html>

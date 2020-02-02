@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap');
+
+/*========================
+  reset.css
+=========================*/
+html {
+  /* font-size: calc(100% / 32vw); */
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 400;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+a:-webkit-any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/*========================
+  common.css for SP
+=========================*/
+.txt_underline {
+  border-bottom: 1px solid #000;
+  /* text-decoration: underline; */
+}
+
+.btn_general {
+  line-height: 1.5;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  text-align: center;
+}
+
+.btn_general a {
+  display: block;
+}
+
+.l-inner {
+  margin-bottom: 2rem;
+}
+
+.l-horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.general_ttl {
+  text-align: center;
+  font-size: 4vw;
+}
+/*========================
+  header for PC
+=========================*/
+
+/* ヘッダーの全体 */
+header {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  height: 80px;
+}
+
+header .header_box {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* タブレットの時 */
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  header .header_box {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+/* ヘッダーハンバーガーアイコン */
+header .header_box .menu {
+  position: absolute;
+  top: 40px; left: 40px; 
+}
+
+.header_box>.menu span,
+.header_box>.menu span::before,
+.header_box>.menu span::after {
+  display: block;
+  width: 2.5rem;
+  height: .2rem;
+  margin-top: -.1rem;
+  margin-left: -1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #000;
+  text-indent: -9999px;
+}
+
+.header_box>.menu span::before,
+.header_box>.menu span::after {
+  content: "";
+}
+
+.header_box>.menu span::before {
+  margin-top: -.95rem;
+}
+
+.header_box>.menu span::after {
+  margin-top: .75rem;
+}
+
+/* ヘッダーのロゴ */
+header .header_box .header_logo {
+  text-align: center;
+  font-size: 24px;
+
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+header .header_box .header_logo a .header_logo_sub {
+  color: #946c45;
+}
+
+/* ヘッダーのコンバージョンボタン */
+header .header_box .header_btn {
+
+  display: none;
+
+
+  max-width: 350px;
+  height: 100%;
+
+
+  color: #fff;
+  background: #ea5550;
+  position: absolute;
+  top: 0; right: 0;
+}
+
+header .header_box .header_btn a {
+  padding: 0 1em;
+  line-height: 35px;  
+}
+
+/*========================
+  footer for PC
+=========================*/
+footer {
+  text-align: center;
+  height: 25px;
+  /* background-color: #946c45; */
+  padding-bottom: 25px;
+}
+
+footer .copyright {
+  width: 180px;
+  margin: 0 auto;
+  position:relative;
+}
+
+footer .copyright p {
+  line-height: 1.5em;
+  padding-left: 1.5em;
+}
+
+footer .copyright p::before {
+  position: absolute;
+  left: 0; 
+	content: "©";
+  display: inline-block;
+  font-size: 1.3em;
+  width: 1em;
+	height: 1em;
+}

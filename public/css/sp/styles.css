@@ -1,0 +1,275 @@
+/*========================
+  トップ カルーセル
+=========================*/
+.carousel {
+	width: 100%;
+	height: 500px;
+	background: #ccc;
+}
+
+/*========================
+  トップ ギャラリー
+=========================*/
+.gallery_area {
+	width: 400px;
+	margin: 100px auto 0;
+	font-size: 18px;
+}
+
+.gallery_area p {
+	text-align: center;
+}
+
+.gallery_area .local_ttl {
+	margin-bottom: 30px;
+}
+
+.gallery_area .gallery_item {
+	margin-bottom: 50px;
+}
+
+.gallery_area .gallery_item.after {
+	font-size: 20px;
+}
+
+.gallery_area .gallery_item.after img {
+	width: 20vw;
+}
+
+
+
+/*========================
+  トップ コンバージョンエリア
+=========================*/
+.cv_area {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.cv_area p {
+	font-size: 24px;
+}
+
+.cv_area .cv_btn {
+	font-size: 20px;
+  max-width: 500px;
+  color: #fff;
+	background: #ea5550;
+	margin: 10px auto 0;
+}
+
+.cv_area .cv_btn a {
+  padding: 1.5rem 3rem;
+}
+
+/*========================
+  トップ よくある質問
+=========================*/
+.faq_area {
+	max-width: 800px;
+	margin: 100px auto 0;
+	font-size: 18px;
+}
+
+@media screen and (min-width:768px) and ( max-width:1023px) {
+	.faq_area {
+		max-width: 700px;
+		margin: 100px auto 0;
+		font-size: 18px;
+	}
+}
+
+.faq_box li {
+
+	box-sizing: border-box;
+	position: relative;
+	
+	width: 100%;
+	line-height: 2.5;
+	padding-left: 10px;
+	background: #ccc;
+	margin-bottom: 1px;
+}
+
+.faq_box li::before {
+	content: 'Q.';
+	margin-right: 0.5em;
+}
+
+.faq_box li::after {
+	position: absolute;
+	content: '+';
+	top: 0; right: 10px;
+
+
+}
+
+
+
+/*========================
+  トップ ご利用者様の声
+=========================*/
+.cs_voice_area {
+	max-width: 650px;
+	margin: 100px auto 0;
+	font-size: 16px;
+}
+
+.cs_voice_area .cs_box {
+	flex-basis: 28%;
+}
+
+.cs_voice_area .cs_icon img {
+	width: 50px;
+}
+
+.cs_voice_area .local_ttl {
+	font-size: 14px;
+}
+
+.cs_box .l-horizontal {
+	align-items: center;
+}
+
+/*========================
+  トップ ご利用の前の注意事項
+=========================*/
+.caution_area {
+	max-width: 800px;
+	margin: 100px auto 0;
+}
+
+@media screen and (min-width:768px) and ( max-width:1023px) {
+	.caution_area {
+		max-width: 700px;
+		margin: 100px auto 0;
+	}
+}
+
+/*========================
+  トップ 見積もり依頼導入
+=========================*/
+.form_intro_area {
+	margin-top: 100px;
+	margin-bottom: 200px;
+}
+
+.form_intro_box {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+
+.form_intro_area>h2 {
+	background: #ccc;
+	height: 100px;
+	line-height: 100px;
+}
+
+.form_intro_area .service_label {
+	width: calc(100% / 2);
+	padding: 20px;
+}
+
+.form_intro_area .btn_desc {
+	text-align: center;
+}
+
+.form_intro_area .next_btn {
+	font-size: 20px;
+	max-width: 500px;
+	color: #fff;
+	background: #ea5550;
+	margin: 10px auto 0;
+}
+
+.form_intro_area .next_btn a {
+	padding: 1.5rem 3rem;
+}
+/*========================
+  お直し見積もりフォーム
+=========================*/
+.inner {
+  /* background-color: #946c45; */
+  padding-bottom: 40px;
+}
+
+.cont_box {
+  max-width: 800px;
+  margin: 50px auto 0;
+  padding: 25px 0 40px;
+  background-color: #e8c59c;
+  border-radius: 10px;
+}
+
+.form_box {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.flex_box {
+  display: flex;
+}
+
+.form_item_box.flex_box {
+  align-items: center;
+  justify-content: center;
+}
+/*========================
+  セレクトボックス
+=========================*/
+
+.cp_ipselect {
+	overflow: hidden;
+	width: 80px;
+	margin-right: 0.5em;
+	/* margin: 2em auto; */
+	text-align: center;
+}
+.cp_ipselect select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+
+.cp_ipselect.cp_sl01 {
+	position: relative;
+	border: 1px solid #999;
+	border-radius: 6px;
+	
+	/* background: #ffffff; */
+	height: 33px;
+}
+
+.cp_ipselect.cp_sl01::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl01 select {
+  box-sizing: border-box;
+	padding: 10px 38px 10px 8px;
+	color: #666666;
+	background: #fff;
+}
