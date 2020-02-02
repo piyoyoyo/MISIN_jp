@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>MISIN | ミシン</title>
+
+  <!-- CSS for PC and tablet-->
+  <link rel="stylesheet" href="../../../css/pc/reset.css" type="text/css">
+  <link rel="stylesheet" href="../../../css/pc/common.css" type="text/css">
+  <link rel="stylesheet" href="../../../css/pc/order/styles.css" type="text/css">
+
+  <!-- CSS for SP ※まだ書いてない -->
+  <!-- <link rel="stylesheet" href="../../../public/css/sp/common.css" type="text/css" media="screen and (max-width:480px)">
+  <link rel="stylesheet" href="../../../public/css/sp/styles.css" type="text/css" media="screen and (max-width:480px)">
+  <link rel="stylesheet" href="../../../public/css/sp/form_item.css" type="text/css" media="screen and (max-width:480px)"> -->
+
+</head>
+
+<body>
+
+  <!-- {include file='header.tpl'} -->
+
+  <header class="header" id="header">
+    <div class="header_main">
+      <h1 class="header_logo"><a href="../../pc/top/">MISIN</a></h1>
+      <ul class="header_members_nav">
+        <li class="header_sign_in">
+          <a href="../../pc/signin/">SIGN IN</a>
+        </li>
+        <li class="header_new_order">
+          <a href="../../pc/order/inputform_01.html">NEW ORDER</a>
+        </li>
+      </ul>
+    </div><!-- /.header_main -->
+
+    <div class="header_nav is-toppage" id="header_nav">
+      <nav>
+        <ul class="header_global_nav">
+          <li><a href="../../pc/top/">HOME</a></li>
+          <li><a href="../../pc/top/#menu">MENU</a></li>
+          <li><a href="../../pc/works/">WORKS</a></li>
+          <li><a href="../../pc/faq/">FAQ</a></li>
+        </ul>
+      </nav><!-- /.header_global_nav -->
+    </div><!-- /.header_nav -->
+  </header>
+
+  <!-- //{include file='header.tpl'} -->
+
+  <main>
+    <article>
+      <section class="l-section_cont order_cont">
+        <div class="l-inner">
+          <h1 class="p-section_ttl">
+            YOUR ORDER
+            <span class="en">Choose what you want</span>
+          </h1>
+
+          <div class="item_ttl_cont">
+            <h2 class="order_item_ttl">Item 01</h2>
+            <button class="cancel_btn">Cancel this item</button>
+          </div>
+
+          <div class="order_detail" id="order_detail_01">
+            <h2 class="order_detail_ttl">1. Choose the item and please name it as you want.</h2>
+            <div class="order_detail_row">
+              <select name="items">
+                <option value="Shirt">Shirt</option>
+                <option value="T-shirt">T-shirt</option>
+                <option value="Skirt">Skirt</option>
+                <option value="Jacket/Coat">Jacket/Coat</option>
+                <option value="Dress">Dress</option>
+                <option value="Pants">Pants</option>
+              </select>
+              <p>name as</p>
+              <input type="text" placeholder="navy slacks">
+              <p class="help_icon"></p>
+              <p>.</p>
+            </div>
+          </div><!-- /.order_detail -->
+
+          <div class="order_detail" id="order_detail_01">
+            <h2 class="order_detail_ttl">1. Choose the item and please name it as you want.</h2>
+            <div class="order_detail_row">
+              <select name="items">
+                <option value="Shirt">Shirt</option>
+                <option value="T-shirt">T-shirt</option>
+                <option value="Skirt">Skirt</option>
+                <option value="Jacket/Coat">Jacket/Coat</option>
+                <option value="Dress">Dress</option>
+                <option value="Pants">Pants</option>
+              </select>
+              <p>name as</p>
+              <input type="text" placeholder="navy slacks">
+              <p class="help_icon"></p>
+              <p>.</p>
+            </div>
+          </div><!-- /.order_detail -->
+
+
+        </div>
+
+      </section>
+
+
+
+    </article>
+  </main>
+
+  <!-- {include file='footer.tpl'} -->
+  <footer class="footer" id="footer">
+    <div class="footer_cont">
+      <p class="footer_copyright">Copyright 2020 KYOKO KOYAMA</p>
+    </div>
+  </footer>
+  <!-- /{include file='footer.tpl'} -->
+
+  <!-- ここにJavaScript読み込み -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="../../../public/js/main.js"></script> -->
+</body>
+</html>

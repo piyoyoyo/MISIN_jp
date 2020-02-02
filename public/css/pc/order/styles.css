@@ -1,0 +1,58 @@
+/* ...........................................
+
+    order
+
+...........................................  */
+
+
+/*   inputform_01
+...........................................  */
+.item_ttl_cont {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 30px;
+}
+
+.order_item_ttl {
+  color: #fff;
+  line-height: 1;
+}
+
+.cancel_btn {
+  font-size: 20px;
+  height: 26px;
+  font-family: lores-12, "PixelMplus", sans-serif;
+  background: #fff;
+  cursor: pointer;
+}
+
+/*   order_detail
+...........................................  */
+.order_detail {
+  padding: 10px 30px;
+}
+
+.order_detail:nth-of-type(odd) {
+  background: #ccc;
+}
+
+.order_detail_row {
+  display: flex;
+  align-items: center;
+}
+
+.order_detail_ttl {
+  font-size: 20px;
+}
+
+.help_icon::after {
+  content: '?';
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  border: 1px solid #000;
+  text-align: center;
+}
