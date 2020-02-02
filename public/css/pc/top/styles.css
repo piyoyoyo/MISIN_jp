@@ -1,0 +1,192 @@
+/* ...........................................
+
+    top
+
+...........................................  */
+
+/*   main_visual
+...........................................  */
+.main_visual_cont {
+  margin-top: -150px;
+  position: relative;
+  z-index: -1;
+}
+
+.main_visual {
+  height: 650px;
+  background: url(../../../img/pc/top/main.png);
+  background-size: cover;
+}
+
+.main_visual img {
+  width: 100%;
+}
+
+.top_main_ttl {
+  display: inline-block;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 130px;
+  font-weight: 400;
+  line-height: 1;
+  position: absolute;
+  top: 155px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*   summary
+...........................................  */
+.summary_cont {
+  margin-top: -155px;
+}
+
+.summary_inner {
+  padding-top: 30px;
+}
+
+.summary_txt {
+  text-align: center;
+}
+
+/*   menu
+...........................................  */
+.menu_cont {
+  padding-top: 40px;
+}
+
+.menu_ttl {
+  margin-bottom: 100px;
+}
+
+/*   clothes_select_area
+...........................................  */
+.clothes_select_area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.clothes_select_area> * {
+  width: calc((100% - 100px) / 6);
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.label img {
+  width: 60%;
+  padding-bottom: 20px;
+}
+
+.item_ttl {
+  display: inline-block;
+  text-align: left;
+}
+
+/*   radio
+...........................................  */
+input[type=radio] {
+  display: none;
+}
+
+input[type="radio"]:checked + label::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  background: rgba(38,50,237,1);
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.label {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+.label:hover {
+  opacity: 0.6;
+}
+
+/*   menu_select_area
+...........................................  */
+.menu_select_area {
+
+}
+
+.menu_select_list> * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1;
+  padding: 10px 40px; 
+}
+
+.menu_select_ttl {
+  flex-basis: 300px;
+}
+
+.menu_price {
+  flex-grow: 2;
+}
+
+.menu_select_list> *:nth-of-type(odd) {
+  background: #ccc;
+}
+
+.menu_select_list> *:nth-of-type(even) .numcount {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/*   menu_order_counter
+...........................................  */
+
+.menu_order_counter {
+  box-sizing: border-box;
+}
+
+.numcount {
+  font-family: lores-12;
+  width: 40px;
+  height: 30px;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -5px;
+  margin-left: -5px;
+  position: relative;
+  font-size: 24px;
+  color: #999;
+  line-height: 30px;
+}
+
+a.minus,
+a.plus {
+  display: inline-block;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  color: #fff;
+  text-align: center;
+  background: #000;
+}
+
+/*   continue_order_btn
+...........................................  */
+.continue_order_btn {
+  margin-top: 60px;
+  font-size: 24px;
+}
