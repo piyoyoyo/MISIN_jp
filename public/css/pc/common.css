@@ -7,11 +7,12 @@
 ...........................................  */
 
 /* 英字フォントはLoRes12を指定 font-weightは400,700が指定可能 */
-@import url("https://use.typekit.net/lat7snk.css"); 
+@import url("https://use.typekit.net/lat7snk.css");
 
 /* 日本語フォントはPixelMplusを指定 font-weightはRegular */
 @font-face {
   font-family: "PixelMplus";
+
   src: url("../../fonts/PixelMplus10-Regular.ttf");
 }
 
@@ -21,16 +22,18 @@
 
 ...........................................  */
 body {
-  min-width: 1064px;
-  color: #000;
-  font-size: 18px;
-  line-height: 1.5;
   font-family: lores-12, "PixelMplus", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
+  line-height: 1.5;
+  min-width: 1064px;
+  color: #000;
 }
 
-input,select,button {
+input,
+select,
+button {
   font-family: lores-12, "PixelMplus", sans-serif;
 }
 
@@ -57,22 +60,22 @@ img {
 }
 
 .bg_color_cont::before {
-  content: '';
   display: block;
   width: 0;
   height: 0;
-  border-style: solid;
+  content: "";
   border-width: 150px 1500px 0 0;
+  border-style: solid;
   border-color: transparent rgba(230,0,111,1) transparent transparent;
 }
 
 .bg_color_cont::after {
-  content: '';
   display: block;
   width: 0;
   height: 0;
-  border-style: solid;
+  content: "";
   border-width: 150px 1500px 0 0;
+  border-style: solid;
   border-color: rgba(230,0,111,1) transparent transparent transparent;
 }
 
@@ -96,18 +99,18 @@ img {
 /*   title
 ...........................................  */
 .p-section_ttl {
-  margin-bottom: 60px;
   font-size: 30px;
-  letter-spacing: 0.1em;
   line-height: 1;
+  margin-bottom: 60px;
   text-align: center;
+  letter-spacing: 0.2em;
 }
 
-.p-section_ttl .en{
-  display: block;
-  font-size: 18px;
+.p-section_ttl .note {
+  font-size: 16px;
   font-weight: 400;
-  padding-top: 10px;
+  display: block;
+  padding-top: 30px;
 }
 
 /*   button
@@ -117,11 +120,11 @@ img {
 }
 
 .p-general_btn a {
-  display: inline-block;
-  padding: 10px 80px;
-  box-sizing: border-box;
-  color: #fff;
   line-height: 1;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 80px;
+  color: #fff;
   border-radius: 22px;
   background: rgba(230,0,111,1);
 }
@@ -135,9 +138,9 @@ img {
   width: 21px;
   height: 20px;
   margin-left: 10px;
-  background: url(../../img/pc/common/arrow.png) no-repeat center /contain;
-  transition: 0.2s;
   content: "";
+  transition: 0.2s;
+  background: url(../../img/pc/common/arrow.png) no-repeat center /contain;
 }
 
 .p-general_btn a:hover {
@@ -206,13 +209,13 @@ img {
 ...........................................  */
 .header_main {
   font-weight: 700;
+  box-sizing: border-box;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 45px;
-  text-align: center;
   padding-left: 195px;
+  text-align: center;
   background: rgba(230,0,111,1);
-  box-sizing: border-box;
 }
 
 .header_main> * {
@@ -222,10 +225,10 @@ img {
 /*   header_logo
 ...........................................  */
 .header_logo {
-  display: inline-block;
-  text-align: center;
   font-size: 70px;
   line-height: 1;
+  display: inline-block;
+  text-align: center;
 }
 
 .header_logo:hover {
@@ -240,7 +243,11 @@ img {
 }
 
 .header_members_nav a {
+  font-size: 14px;
   display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  letter-spacing: 0.1em;
 }
 
 .header_sign_in {
@@ -263,35 +270,46 @@ img {
 
 /*   header_nav
 ...........................................  */
-.header_nav>* {
+.header_nav> * {
   background: rgba(230,0,111,1);
 }
 
 .header_nav::after {
-  content: '';
   display: block;
   width: 0;
   height: 0;
-  border-style: solid;
+  content: "";
   border-width: 150px 1500px 0 0;
+  border-style: solid;
   border-color: rgba(230,0,111,1) transparent transparent transparent;
 }
 
 /*   header_global_nav
 ...........................................  */
 .header_global_nav {
-  width: 800px;
-  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
   display: flex;
   justify-content: space-between;
-  font-size: 22px;
-  font-weight: 700;
+  width: 800px;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
 }
 
 .header_global_nav> *:hover {
   color: #fff;
 }
 
+.header_global_nav> * a {
+  display: block;
+  height: 24px;
+}
+
+.header_global_nav> * .en {
+  font-size: 22px;
+  vertical-align: middle;
+}
 /* トップページ用 */
 .header_main.is-toppage {
   /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
@@ -327,18 +345,18 @@ img {
 }
 
 .footer_cont {
-  background: rgba(230,0,111,1);
   padding-top: 10px;
   padding-bottom: 50px;
+  background: rgba(230,0,111,1);
 }
 
 .footer::before {
-  content: '';
   display: block;
   width: 0;
   height: 0;
-  border-style: solid;
+  content: "";
   border-width: 150px 1500px 0 0;
+  border-style: solid;
   border-color: transparent rgba(230,0,111,1) transparent transparent;
 }
 

@@ -1,2 +1,2 @@
 # MISIN
-MISIN Webサイト構築用
+MISIN 日本語版Webサイト構築用プロジェクトです。

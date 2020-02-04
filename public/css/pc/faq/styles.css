@@ -1,0 +1,33 @@
+/*   MISINとは？
+...........................................  */
+.p-section_ttl {
+  font-size: 26px;
+}
+
+.p-section_ttl .en {
+  font-size: 36px;
+  vertical-align: -3px;
+}
+
+.summary_txt {
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+
+.summary_txt p {
+  margin-bottom: 16px;
+}
+
+a.inquiry_link {
+  display: inline-block;
+  text-decoration: underline;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+a.inquiry_link:hover {
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+}
