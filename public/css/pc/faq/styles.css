@@ -12,7 +12,7 @@
 .summary_txt {
   line-height: 2;
   text-align: center;
-  letter-spacing: 0.15em;
+  letter-spacing: .15em;
 }
 
 .summary_txt p {
@@ -21,13 +21,13 @@
 
 a.inquiry_link {
   display: inline-block;
-  text-decoration: underline;
-  padding-left: 7px;
   padding-right: 7px;
+  padding-left: 7px;
+  text-decoration: underline;
 }
 
 a.inquiry_link:hover {
   color: #fff;
-  background: #000;
   text-decoration: none;
+  background: #000;
 }

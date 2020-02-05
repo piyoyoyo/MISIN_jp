@@ -1,0 +1,25 @@
+/* ...........................................
+
+    sign in
+
+...........................................  */
+
+.signin_inner {
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+.signin_item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.signin_item span{
+  display: block;
+}
+
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #000;
+}

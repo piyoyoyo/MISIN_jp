@@ -21,14 +21,18 @@
     base
 
 ...........................................  */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  min-width: 1064px;
+  color: #000;
   font-family: lores-12, "PixelMplus", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
-  min-width: 1064px;
-  color: #000;
 }
 
 input,
@@ -42,7 +46,7 @@ button {
 }
 
 a:hover {
-  transition: 0.2s;
+  transition: .2s;
 }
 
 img {
@@ -63,20 +67,20 @@ img {
   display: block;
   width: 0;
   height: 0;
-  content: "";
   border-width: 150px 1500px 0 0;
   border-style: solid;
   border-color: transparent rgba(230,0,111,1) transparent transparent;
+  content: "";
 }
 
 .bg_color_cont::after {
   display: block;
   width: 0;
   height: 0;
-  content: "";
   border-width: 150px 1500px 0 0;
   border-style: solid;
   border-color: rgba(230,0,111,1) transparent transparent transparent;
+  content: "";
 }
 
 /*   basic layouts
@@ -99,18 +103,18 @@ img {
 /*   title
 ...........................................  */
 .p-section_ttl {
-  font-size: 30px;
-  line-height: 1;
   margin-bottom: 60px;
+  font-size: 24px;
+  line-height: 1;
   text-align: center;
-  letter-spacing: 0.2em;
+  letter-spacing: .2em;
 }
 
 .p-section_ttl .note {
-  font-size: 16px;
-  font-weight: 400;
   display: block;
   padding-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /*   button
@@ -120,13 +124,15 @@ img {
 }
 
 .p-general_btn a {
-  line-height: 1;
-  display: inline-block;
-  box-sizing: border-box;
+  display: inline-flex;
   padding: 10px 80px;
   color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: .15em;
   border-radius: 22px;
   background: rgba(230,0,111,1);
+  height: 40px;
 }
 
 .p-general_btn a:last-child {
@@ -138,9 +144,9 @@ img {
   width: 21px;
   height: 20px;
   margin-left: 10px;
-  content: "";
-  transition: 0.2s;
   background: url(../../img/pc/common/arrow.png) no-repeat center /contain;
+  transition: .2s;
+  content: "";
 }
 
 .p-general_btn a:hover {
@@ -148,52 +154,9 @@ img {
 }
 
 .p-general_btn a:hover::after {
-  transition-delay: 0.15s;
+  transition-delay: .15s;
   transform: translateX(10px);
 }
-
-/*   pagination
-...........................................  */
-/* 
-.p-page_nav {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 40px;
-  border-bottom: 2px solid #d9d9d9;
-}
-.p-page_nav > * {
-  margin-right: 20px;
-}
-.p-page_nav a {
-  display: block;
-  min-width: 196px;
-  padding: 17px 0;
-  box-sizing: border-box;
-  font-weight: 700;
-  line-height: 1;
-  text-align: center;
-  letter-spacing: 0.1em;
-  border-radius: 3px 3px 0 0;
-  background: #e6e6e6;
-}
-.p-page_nav > *:hover,
-.p-page_nav .active {
-  position: relative;
-  bottom: -2px;
-}
-.p-page_nav > *:hover a,
-.p-page_nav .active a {
-  padding: 21px 0;
-  border: solid #e6e6e6;
-  border-width: 2px 2px 0;
-  background: #fff;
-  opacity: 1;
-  transition: none;
-}
-.p-page_nav .active a:hover {
-  opacity: 1;
-} */
-
 
 /* ...........................................
 
@@ -201,33 +164,32 @@ img {
 
 ...........................................  */
 .header {
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 /*   header_main
 ...........................................  */
 .header_main {
-  font-weight: 700;
-  box-sizing: border-box;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 45px;
   padding-left: 195px;
+  font-weight: 700;
   text-align: center;
   background: rgba(230,0,111,1);
 }
 
-.header_main> * {
+.header_main > * {
   display: inline-block;
 }
 
 /*   header_logo
 ...........................................  */
 .header_logo {
+  display: inline-block;
   font-size: 70px;
   line-height: 1;
-  display: inline-block;
   text-align: center;
 }
 
@@ -243,11 +205,11 @@ img {
 }
 
 .header_members_nav a {
-  font-size: 14px;
   display: block;
   padding-top: 5px;
   padding-bottom: 5px;
-  letter-spacing: 0.1em;
+  font-size: 14px;
+  letter-spacing: .1em;
 }
 
 .header_sign_in {
@@ -270,7 +232,7 @@ img {
 
 /*   header_nav
 ...........................................  */
-.header_nav> * {
+.header_nav > * {
   background: rgba(230,0,111,1);
 }
 
@@ -278,35 +240,35 @@ img {
   display: block;
   width: 0;
   height: 0;
-  content: "";
   border-width: 150px 1500px 0 0;
   border-style: solid;
   border-color: rgba(230,0,111,1) transparent transparent transparent;
+  content: "";
 }
 
 /*   header_global_nav
 ...........................................  */
 .header_global_nav {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
   display: flex;
   justify-content: space-between;
   width: 800px;
   margin: 0 auto;
-  letter-spacing: 0.1em;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .1em;
 }
 
-.header_global_nav> *:hover {
+.header_global_nav > *:hover {
   color: #fff;
 }
 
-.header_global_nav> * a {
+.header_global_nav > * a {
   display: block;
   height: 24px;
 }
 
-.header_global_nav> * .en {
+.header_global_nav > * .en {
   font-size: 22px;
   vertical-align: middle;
 }
@@ -340,8 +302,8 @@ img {
 
 ...........................................  */
 .footer {
-  line-height: 1;
   overflow: hidden;
+  line-height: 1;
 }
 
 .footer_cont {
@@ -354,14 +316,14 @@ img {
   display: block;
   width: 0;
   height: 0;
-  content: "";
   border-width: 150px 1500px 0 0;
   border-style: solid;
   border-color: transparent rgba(230,0,111,1) transparent transparent;
+  content: "";
 }
 
 .footer_copyright {
   font-size: 14px;
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
 }

@@ -4,15 +4,14 @@
 
 ...........................................  */
 
-
 /*   inputform_01
 ...........................................  */
 .item_ttl_cont {
-  background: #000;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 8px 30px;
+  background: #000;
 }
 
 .order_item_ttl {
@@ -21,8 +20,8 @@
 }
 
 .cancel_btn {
-  font-size: 20px;
   height: 26px;
+  font-size: 20px;
   background: #fff;
 }
 
@@ -38,8 +37,8 @@
 
 .order_detail_row {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .order_detail_ttl {
@@ -47,21 +46,20 @@
 }
 
 select {
-  font-size: 18px;
   width: 150px;
   padding: 5px 10px;
-  cursor: pointer;
-  outline: none;
-  background: transparent;
-  background-image: none;
-  box-shadow: none;
-  -webkit-appearance: none;
-  appearance: none;
-
+  font-size: 18px;
   border: 1px solid #000;
   border-radius: 0;
-  background: #ffffff;
+  outline: none;
+  background: transparent;
+  background: #fff;
+  background-image: none;
+  box-shadow: none;
+  cursor: pointer;
 
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 select::-ms-expand {
@@ -71,35 +69,32 @@ select::-ms-expand {
 
 .p-select_box {
   position: relative;
-
 }
 
 .p-select_box::after {
   display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 3px;
-  right: 5px;
-  margin: auto;
   width: 18px;
   height: 18px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 3px;
   background: url(../../../img/pc/common/check_icon.png) no-repeat center / contain;
+  content: "";
   pointer-events: none;
 }
 
 
 .item_name_txt {
-  padding-left: 10px;
   padding-right: 10px;
+  padding-left: 10px;
 }
 
 .item_name {
-
-  font-size: 18px;
-  padding: 5px;
   height: 31px;
-  box-sizing: border-box;
+  padding: 5px;
+  font-size: 18px;
 }
 
 .help_icon_cont {
@@ -113,13 +108,13 @@ select::-ms-expand {
 }
 
 .help_icon::after {
-  content: '?';
   display: block;
   width: 24px;
   height: 24px;
-  border-radius: 24px;
-  border: 1px solid #000;
   text-align: center;
+  border: 1px solid #000;
+  border-radius: 24px;
+  content: "?";
 }
 
 .item_name_period {
@@ -128,10 +123,10 @@ select::-ms-expand {
 
 /*   ph_upload_row
 ...........................................  */
-.ph_upload_row> * {
+.ph_upload_row > * {
   width: calc((100% - 90px)/4);
 }
-.ph_upload_row> *:not(:last-of-type) {
+.ph_upload_row > *:not(:last-of-type) {
   margin-right: 30px;
 }
 
@@ -140,8 +135,8 @@ select::-ms-expand {
 }
 
 .item_ph {
-  border: 1px solid #000;
   margin-bottom: 20px;
+  border: 1px solid #000;
 }
 
 .ph_btn_cont {
@@ -153,12 +148,12 @@ select::-ms-expand {
 /*   ph_btn_cont
 ...........................................  */
 
-.ph_btn_cont> * {
+.ph_btn_cont > * {
   width: calc((100% - 30px)/2);
-  border: 1px solid #000;
   padding: 3px 0;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
+  border: 1px solid #000;
 }
 
 .ph_delete_btn {

@@ -87,7 +87,6 @@
 
 .clothes_select_area> * {
   position: relative;
-  box-sizing: border-box;
   width: calc((100% - 100px) / 6);
   text-align: center;
 }
@@ -125,7 +124,6 @@ input[type="radio"]:checked+ label::before {
 
 .label {
   display: block;
-  box-sizing: border-box;
   cursor: pointer;
   text-align: center;
 }
@@ -140,30 +138,7 @@ input[type="radio"]:checked+ label::before {
   line-height: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 10px 40px;
-}
-
-.menu_select_ttl {
-  font-size: 16px;
-  flex-basis: 300px;
-}
-
-/* 価格周り */
-.menu_price {
-  font-size: 20px;
-  flex-grow: 2;
-}
-
-.min_price +.cur_unit::after {
-  content: '~';
-  font-size: 22px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-.cur_unit {
-  font-size: 14px;
 }
 
 .menu_select_list> *:nth-of-type(odd) {
@@ -175,19 +150,24 @@ input[type="radio"]:checked+ label::before {
   border-bottom: 1px solid #ccc;
 }
 
+.menu_select_ttl {
+  font-size: 16px;
+  flex-basis: 200px;
+}
+
 /*   menu_order_counter
 ...........................................  */
 .menu_order_counter {
-  box-sizing: border-box;
+  height: 30px;
+  width: 100px;
+  margin-right: 50px;
 }
 
 .numcount {
-  font-family: lores-12;
   font-size: 24px;
   line-height: 30px;
   position: relative;
   display: inline-block;
-  box-sizing: border-box;
   width: 40px;
   height: 30px;
   margin-right: -5px;
@@ -201,13 +181,29 @@ input[type="radio"]:checked+ label::before {
 a.minus,
 a.plus {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 30px;
   display: inline-block;
   width: 30px;
-  height: 30px;
   text-align: center;
   color: #fff;
   background: #000;
+}
+
+/* 価格周り */
+.menu_price {
+  font-size: 20px;
+  flex-basis: 200px;
+}
+
+.min_price +.cur_unit::after {
+  content: '~';
+  font-size: 22px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.cur_unit {
+  font-size: 14px;
 }
 
 /*   continue_order_btn
